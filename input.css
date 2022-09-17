@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 8px;               /* width of the entire scrollbar */
+}
+::-webkit-scrollbar-track {
+  background: transparent;        /* color of the tracking area */
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
+/* loading bar */
+
+/* .loader{
+    margin: 2em auto;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    /* display: none; *
+    background-color: red;
+    /* animation: rotate 4s linear infinite; *
+} */
+
+.loader > span{
+    display: inline-block;
+    background-color: rgba(0, 0, 223, 0.8);
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    margin: 0 0.2em;
+    transform: translate3d(0);
+    animation: bounce 0.4s infinite alternate;
+}
+
+.loader > span:nth-child(2){
+   background-color: rgb(65, 105, 225);
+   animation-delay: 0.1s;
+}
+
+.loader > span:nth-child(3){
+   animation-delay: 0.2s;
+}
+
+@keyframes bounce{
+    to{
+       width: 16px;
+       height: 16px;
+       transform: translate3d(0, -16px, 0);
+    }
+}
+
+@keyframes grow{
+    to{
+        transform: scale(1);
+    }
+} 
